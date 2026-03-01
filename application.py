@@ -25,7 +25,7 @@ def predict_datapoint():
             reading_score=float(request.form.get('reading_score')),
             writing_score=float(request.form.get('writing_score'))
         )
-        pred_df = data.get_data_as_dataframe()  # check method name
+        pred_df = data.get_data_as_data_frame()  # check method name
         print(pred_df)
         print("Before Prediction")
 
